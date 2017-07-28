@@ -66,7 +66,7 @@ To start game:
 8. Play until the application notifies you that the game is over.
 9. Enjoy!
 
-![Kalah game](https://ibb.co/it1Xzk)
+![Kalah game](https://image.ibb.co/n8eKek/Screen_Shot_2017_07_28_at_12_36_43.png)
 
 # Rules
 1. At the beginning of the game, six stones are placed in each house.
