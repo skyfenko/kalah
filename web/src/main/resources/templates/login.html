@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Kalah Game </title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="webjars/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <!-- NProgress -->
+    <link href="../static/css/nprogress.css" th:href="@{css/nprogress.css}" rel="stylesheet"/>
+    <!-- Animate.css -->
+    <link rel="stylesheet" type="text/css" href="webjars/animate.css/3.5.0/animate.min.css"/>
+
+    <!-- Custom Theme Style -->
+    <link href="../static/css/custom.min.css" th:href="@{css/custom.min.css}" rel="stylesheet"/>
+</head>
+
+<body class="login">
+<div>
+    <a class="hiddenanchor" id="signup"></a>
+    <a class="hiddenanchor" id="signin"></a>
+
+    <div class="login_wrapper">
+        <div class="animate form login_form">
+            <section class="login_content">
+                <form th:action="@{/login}" method="post">
+                    <h1>Login Form</h1>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Username" name="username" required=""/>
+                    </div>
+                    <div>
+                        <input type="password" class="form-control" placeholder="Password" name="password" required=""/>
+                    </div>
+                    <div>
+                        <button class="btn btn-default submit" type="submit">Log in</button>
+                        <div class="separator"></div>
+                        <p>Check description to this task to find out usernames</p>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="separator">
+
+                        <div class="clearfix"></div>
+                        <br/>
+
+                        <div>
+                            <h1><i class="fa fa-check"></i> Kalah</h1>
+                            <p>2017 Stanislav Kyfenko. Kalah game</p>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+</body>
+</html>

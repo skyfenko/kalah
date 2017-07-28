@@ -1,0 +1,79 @@
+.btn-circle-lg {
+    width: 79px;
+    height: 79px;
+    text-align: center;
+    padding: 13px 0;
+    font-size: 30px;
+    line-height: 1.8;
+    border-radius: 70px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.btn-circled-kalah {
+    width: 79px;
+    height: 250px;
+    text-align: center;
+    padding: 13px 0;
+    font-size: 30px;
+    line-height: 7;
+    border-radius: 70px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    vertical-align: middle;
+    margin-top: 40px;
+}
+
+.north-house {
+    vertical-align: top;
+}
+
+.south-house {
+    vertical-align: bottom;
+}
+
+.board {
+    vertical-align: middle;
+    padding-top: 30px;
+}
+
+.south-houses-row {
+    position: absolute;
+    left: 460px;
+    top: 430px;
+}
+
+.gameName {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 37px;
+}
+
+.startGame {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.takeTurnPlayer {
+    font-size: 20px;
+    margin-left: 63px;
+    font-weight: bold;
+    color: brown;
+}
+
+.whoIsWinner {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.winner {
+    font-size: 20px;
+    margin-left: 66px;
+    font-weight: bold;
+    color: brown;
+}
+
+.howTakesTurn {
+    font-size: 20px;
+    margin-left: 20px;
+}

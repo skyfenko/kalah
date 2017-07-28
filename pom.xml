@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.skyfenko</groupId>
+    <artifactId>kalah</artifactId>
+    <version>${versions.kalah}</version>
+
+    <name>Kalah game</name>
+    <description>Kalah 6x6 game for 2 players</description>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.4.RELEASE</version>
+    </parent>
+
+    <modules>
+        <module>domain</module>
+        <module>service</module>
+        <module>web</module>
+    </modules>
+
+    <properties>
+        <versions.kalah>0.0.1-SNAPSHOT</versions.kalah>
+
+        <versions.webjars.bootstrap>3.3.7</versions.webjars.bootstrap>
+        <versions.swagger>2.6.1</versions.swagger>
+        <versions.swagger.ui>2.4.0</versions.swagger.ui>
+        <versions.spring.boot>1.5.4.RELEASE</versions.spring.boot>
+        <versions.thymeleaf.extras>3.0.2.RELEASE</versions.thymeleaf.extras>
+        <versions.lombok>1.16.18</versions.lombok>
+        <versions.commons.lang3>3.6</versions.commons.lang3>
+        <versions.commons.collections>3.2.2</versions.commons.collections>
+        <versions.junit>4.12</versions.junit>
+        <versions.jquery>3.2.1</versions.jquery>
+        <versions.font.awesome>4.6.3</versions.font.awesome>
+        <versions.animate>3.5.0</versions.animate>
+        <versions.nekohtml>1.9.22</versions.nekohtml>
+        <versions.pitest>1.2.2</versions.pitest>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- modules -->
+            <dependency>
+                <groupId>com.skyfenko</groupId>
+                <artifactId>domain</artifactId>
+                <version>${versions.kalah}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.skyfenko</groupId>
+                <artifactId>service</artifactId>
+                <version>${versions.kalah}</version>
+            </dependency>
+
+            <!-- spring dependencies-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+                <version>${versions.spring.boot}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-devtools</artifactId>
+                <version>${versions.spring.boot}</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${versions.spring.boot}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-security</artifactId>
+                <version>${versions.spring.boot}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <version>${versions.spring.boot}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.thymeleaf.extras</groupId>
+                <artifactId>thymeleaf-extras-springsecurity4</artifactId>
+                <version>${versions.thymeleaf.extras}</version>
+            </dependency>
+
+            <!-- utils -->
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>bootstrap</artifactId>
+                <version>${versions.webjars.bootstrap}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>jquery</artifactId>
+                <version>${versions.jquery}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>font-awesome</artifactId>
+                <version>${versions.font.awesome}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>animate.css</artifactId>
+                <version>${versions.animate}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.sourceforge.nekohtml</groupId>
+                <artifactId>nekohtml</artifactId>
+                <version>${versions.nekohtml}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${versions.lombok}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${versions.commons.lang3}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${versions.commons.collections}</version>
+            </dependency>
+
+            <!-- test -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${versions.junit}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>${version.pitest}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
+                <plugin>
+                    <groupId>org.pitest</groupId>
+                    <artifactId>pitest-maven</artifactId>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
