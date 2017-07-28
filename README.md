@@ -66,6 +66,8 @@ To start game:
 8. Play until the application notifies you that the game is over.
 9. Enjoy!
 
+![Login Form](https://image.ibb.co/e4BUC5/Screen_Shot_2017_07_28_at_12_43_48.png)
+![Kalah game before game is started](https://image.ibb.co/jjWws5/Screen_Shot_2017_07_28_at_12_43_59.png)
 ![Kalah game](https://image.ibb.co/n8eKek/Screen_Shot_2017_07_28_at_12_36_43.png)
 
 # Rules
