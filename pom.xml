@@ -26,7 +26,7 @@
     <properties>
         <versions.kalah>0.0.1-SNAPSHOT</versions.kalah>
 
-        <versions.webjars.bootstrap>3.3.7</versions.webjars.bootstrap>
+        <versions.webjars.bootstrap>3.4.1</versions.webjars.bootstrap>
         <versions.swagger>2.6.1</versions.swagger>
         <versions.swagger.ui>2.4.0</versions.swagger.ui>
         <versions.spring.boot>1.5.4.RELEASE</versions.spring.boot>
