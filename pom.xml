@@ -29,7 +29,7 @@
         <versions.webjars.bootstrap>3.3.7</versions.webjars.bootstrap>
         <versions.swagger>2.6.1</versions.swagger>
         <versions.swagger.ui>2.4.0</versions.swagger.ui>
-        <versions.spring.boot>1.5.4.RELEASE</versions.spring.boot>
+        <versions.spring.boot>1.5.9.RELEASE</versions.spring.boot>
         <versions.thymeleaf.extras>3.0.2.RELEASE</versions.thymeleaf.extras>
         <versions.lombok>1.16.18</versions.lombok>
         <versions.commons.lang3>3.6</versions.commons.lang3>
