@@ -34,7 +34,7 @@
         <versions.lombok>1.16.18</versions.lombok>
         <versions.commons.lang3>3.6</versions.commons.lang3>
         <versions.commons.collections>3.2.2</versions.commons.collections>
-        <versions.junit>4.12</versions.junit>
+        <versions.junit>4.13.1</versions.junit>
         <versions.jquery>3.2.1</versions.jquery>
         <versions.font.awesome>4.6.3</versions.font.awesome>
         <versions.animate>3.5.0</versions.animate>
